@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .op {
+            text-align: right;
+            width: 100%;
+            background-color: transparent;
+            outline: 2px black;
+            box-shadow: 0px 0px 15px rgb(151, 149, 149);
+            height: 150px;
+            cursor: text;
+            color: rgb(221, 216, 216);
+            padding-right: 20px;
+            padding-top: 40px;
+            font-size: 20px;
+
+        }
+
+        .mdiv {
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            position: fixed;
+            top: 0px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .calci {
+            width: 300px;
+            height: 500px;
+            background-color: rgb(29, 29, 29);
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 120px rgb(15, 15, 15);
+            background-color: black;
+
+        }
+
+        .button {
+
+            height: 35px;
+            width: 50px;
+            margin-left: 10px;
+            margin-top: 25px;
+            background-color: transparent;
+            border-radius: 30px;
+            color: wheat;
+            outline: none;
+            box-shadow: 0px 0px 10px grey;
+            font-size: 20px;
+
+        }
+
+        .Zero {
+            margin-left: 10px;
+            height: 35px;
+            width: 115px;
+            border-radius: 30px;
+            background-color: transparent;
+            color: wheat;
+            font-size: 20px;
+            box-shadow: 0px 0px 10px grey
+        }
+
+        .button1 {
+            background-color: rgb(149, 243, 61);
+            box-shadow: 0px 0px 10px grey;
+            color: black;
+            c
+        }
+        .mdiv {
+            background-image:url(https://i.gifer.com/origin/f0/f05888fd7598ed793be9c7a2704f0fda_w200.webp);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="mdiv">
+        <div class="calci">
+            <form action="">
+                <div>
+                    <input type="text" class="op" name="op">
+                </div>
+
+                <div class="input">
+                    <input type="button" name="AC" value="AC" onclick="op.value=''" class="button">
+                    <input type="button" name="C" value="C" onclick="op.value+=''" class="button">
+                    <input type="button" name="mod" value="%" onclick="op.value+='%'" class="button">
+                    <input type="button" name="operator" value="/" onclick="op.value+='/'" class="button button1">
+                </div>
+
+                <div>
+                    <input type="button" name="number" value="9" onclick="op.value+='9'" class="button">
+                    <input type="button" name="number" value="8" onclick="op.value+='8'" class="button">
+                    <input type="button" name="number" value="7" onclick="op.value+='7'" class="button">
+                    <input type="button" name="operator" value="X" onclick="op.value+='*'" class="button button1">
+                </div>
+
+                <div>
+                    <input type="button" name="number" value="6" onclick="op.value+='6'" class="button">
+                    <input type="button" name="number" value="5" onclick="op.value+='5'" class="button">
+                    <input type="button" name="number" value="4" onclick="op.value+='4'" class="button">
+                    <input type="button" name="operator" value="-" onclick="op.value+='-'" class="button button1">
+                </div>
+
+                <div>
+                    <input type="button" name="number" value="3" onclick="op.value+='3'" class="button">
+                    <input type="button" name="number" value="2" onclick="op.value+='2'" class="button">
+                    <input type="button" name="number" value="1" onclick="op.value+='1'" class="button">
+                    <input type="button" name="operator" value="+" onclick="op.value+='+'" class="button button1">
+                </div>
+
+                <div>
+                    <input type="button" name="number" value="0" onclick="op.value+='0'" class="Zero">
+                    <input type="button" name="operator" value="." onclick="op.value+='.'" class="button">
+                    <input type="button" name="operator" value="=" onclick="op.value=eval(op.value)"
+                        class="button button1">
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
